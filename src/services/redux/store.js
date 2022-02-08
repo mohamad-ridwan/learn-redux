@@ -1,10 +1,8 @@
 import {configureStore} from '@reduxjs/toolkit'
-import counterReducer from './counterSlice'
-import form from './form'
+import blogData from './blogdata'
 
 export default configureStore({
-    reducer:{
-        bangsat: counterReducer,
-        dataForm: form
-    },
+    reducer: {
+        dataBlog: blogData
+    }
 })
